@@ -371,9 +371,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
-        "type": "package"
-      },
       "Microsoft.Win32.Registry/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -391,18 +388,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "NStack.Core/0.16.0": {
-        "type": "package",
-        "dependencies": {
-          "System.ValueTuple": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/NStack.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/NStack.dll": {}
         }
       },
       "System.Diagnostics.EventLog/5.0.0": {
@@ -461,28 +446,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "Terminal.Gui/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
-          "NStack.Core": "0.16.0"
-        },
-        "compile": {
-          "lib/net5.0/Terminal.Gui.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/Terminal.Gui.dll": {}
         }
       }
     }
@@ -1028,17 +991,6 @@
         "version.txt"
       ]
     },
-    "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
-      "sha512": "7D2TMufjGiowmt0E941kVoTIS+GTNzaPopuzM1/1LSaJAdJdBrVP0SkZW7AgDd0a2U1DjsIeaKG1wxGVBNLDMw==",
-      "type": "package",
-      "path": "microsoft.netframework.referenceassemblies/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
-        "microsoft.netframework.referenceassemblies.nuspec"
-      ]
-    },
     "Microsoft.Win32.Registry/5.0.0": {
       "sha512": "dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
       "type": "package",
@@ -1081,18 +1033,6 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "NStack.Core/0.16.0": {
-      "sha512": "DbScJtx9D3eAlc34lMsszsB246OCbrsu5FaITTOgRUIzOSLAlTItuKIxbU318HxM1cWF60yFV+/Lnh5ZOHLcoQ==",
-      "type": "package",
-      "path": "nstack.core/0.16.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/NStack.dll",
-        "nstack.core.0.16.0.nupkg.sha512",
-        "nstack.core.nuspec"
       ]
     },
     "System.Diagnostics.EventLog/5.0.0": {
@@ -1222,67 +1162,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Terminal.Gui/1.0.0": {
-      "sha512": "57GqQs6gWRRnjjuAGT/zAgBVMwbHxk/0PO8Lm9wCpe5bd7cnOImrd5pvXLtPPNZz0YiSEY8eo4LoH38B3nscWg==",
-      "type": "package",
-      "path": "terminal.gui/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net472/Terminal.Gui.dll",
-        "lib/net472/Terminal.Gui.xml",
-        "lib/net5.0/Terminal.Gui.dll",
-        "lib/net5.0/Terminal.Gui.xml",
-        "lib/netstandard2.0/Terminal.Gui.dll",
-        "lib/netstandard2.0/Terminal.Gui.xml",
-        "terminal.gui.1.0.0.nupkg.sha512",
-        "terminal.gui.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1292,8 +1171,7 @@
       "Microsoft.Extensions.Configuration.FileExtensions >= 5.0.0",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.1",
-      "Microsoft.Extensions.Hosting >= 5.0.0",
-      "Terminal.Gui >= 1.0.0"
+      "Microsoft.Extensions.Hosting >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -1363,10 +1241,6 @@
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[5.0.0, )"
-          },
-          "Terminal.Gui": {
-            "target": "Package",
-            "version": "[1.0.0, )"
           }
         },
         "imports": [

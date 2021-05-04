@@ -8,7 +8,7 @@ namespace WhatsTheWeather
     {
         static async Task Main(string[] args)
         {
-            //[pqa] Setup the StartUp to enale dependency injection
+            //[pqa] Setup the StartUp to enable dependency injection
             var services = Startup.ConfigureServices();
             var serviceProvider = services.BuildServiceProvider();
 

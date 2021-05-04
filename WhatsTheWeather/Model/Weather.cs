@@ -1,10 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -12,47 +8,38 @@ namespace WhatsTheWeather.Model
 {
     class Weather : IWeather
     {
+        //[pqa] Declare needed fields.
         private readonly string AccessKey;
-        //private readonly IConfiguration Config;
         private readonly HttpClient Client = new HttpClient();
-        //public WeatherDto Response;
 
         public Weather(IConfiguration config)
         {
-            //Config = config;
-            //AccessKey = "sdsds";
+            //[pqa] Retrieve the API access key from the configuration.
             AccessKey = config["WeatherStack:access_key"];
         }
 
-        //public WeatherDto GetWeather()
-        //{
-        //    WeatherDto result=null;
-
-        //    return result;
-        //}
+        //[pqa] API response will be stored in this method.
         public WeatherDto Response { get; set; }
 
         public async Task Request(string requestQuery)
         {
+            //[pqa] Send request and deserialize the response from the weather API
             Client.DefaultRequestHeaders.Accept.Clear();
             Client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
             Client.DefaultRequestHeaders.Add("User-Agent", "What is the Weather Application");
             
-            //var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
+            //[pqa] Pass the access key and the request key here
             var streamTask = Client.GetStreamAsync(string.Format("http://api.weatherstack.com/current?access_key={0}&query={1}", AccessKey, requestQuery));
 
+            //[pqa] Deserialize response to Response method
             Response = await JsonSerializer.DeserializeAsync<WeatherDto>(await streamTask);
 
-            //foreach (var repo in weather)
-            //    Console.WriteLine(repo.Location.Name);
-            //var msg = await stringTask;
-            //Console.Write(weather.Location.Name);
         }
 
-        public string Test()
-        {
-            return AccessKey;
-        }
+        //public string Test()
+        //{
+        //    return AccessKey;
+        //}
     }
 }

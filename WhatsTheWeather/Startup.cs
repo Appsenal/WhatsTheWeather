@@ -9,22 +9,19 @@ namespace WhatsTheWeather
 {
     public static class Startup
     {
-        //public static IConfiguration Configuration { get; }
-        //public static Startup(IConfiguration configuration)
-        //{
-        //    Configuration = configuration;
-        //}
-
+        //[pqa] Startup configuration. Services for UI, control and model are injected here.
         public static IServiceCollection ConfigureServices()
         {
             var services = new ServiceCollection();
+
+            //[pqa] Application configuration from the appsettings file.
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: false);
             IConfiguration configuration = builder.Build();
-            
             services.AddSingleton(configuration);
 
+            //[pqa] Other injections
             services.AddTransient<IScreen, Screen>();
             services.AddTransient<WeatherControl>();
             services.AddScoped<IWeather, Weather>();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1KwcVKU/5d+uxf9rNTTm2m5+rcj/b9dPgdplh4dkwikt6nqXa86mY8VDLXKnThBKGJ2g933bIY0UIllvuJAc3g==",
+  "dgSpecHash": "Ahuxoyp8dhT6O03Dm7AGZxKv2VxnqyUuM61GBhotYv4SDlso1KfHFbcfz3ScR9zy+as7y+W5CPFObiGVsSYaCw==",
   "success": true,
   "projectFilePath": "D:\\Pierre\\Project\\Repository\\WhatsTheWeather\\WhatsTheWeather\\WhatsTheWeather.csproj",
   "expectedPackageFiles": [
@@ -30,14 +30,10 @@
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\5.0.0\\microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
-    "C:\\Users\\pierr\\.nuget\\packages\\nstack.core\\0.16.0\\nstack.core.0.16.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\system.diagnostics.eventlog\\5.0.0\\system.diagnostics.eventlog.5.0.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\pierr\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\pierr\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
-    "C:\\Users\\pierr\\.nuget\\packages\\terminal.gui\\1.0.0\\terminal.gui.1.0.0.nupkg.sha512"
+    "C:\\Users\\pierr\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace WhatsTheWeather.Model
 {
+    //[pqa] The structures of this class is similar to the JSON response of the weather API.
+    //[pqa] I only put selected fields here but this can easily be expanded with minimal impact to the other classes.
     public class WeatherDto
     {
         [JsonPropertyName("request")]
